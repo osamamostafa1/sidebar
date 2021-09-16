@@ -1,0 +1,88 @@
+<div class="logo-details">
+    <img src="../../assets/image/person.jpg" alt="">
+    <div class="logo_name">Farmer</div>
+    <i class='bx bx-menu' id="btn" *ngIf="sideBarService.sideBarSubject.value == 'close'" (click)="onToggleSideBar()"></i>
+    <i class='bx bx-menu-alt-right' id="btn" *ngIf="sideBarService.sideBarSubject.value == 'open'" (click)="onToggleSideBar()"></i>
+</div>
+<ul class="nav-list">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a routerLink="/">
+            <i class='bx bx-user'></i>
+            <span class="links_name">Home</span>
+        </a>
+    </li>
+    <li class="" routerLinkActive="active">
+        <a routerLink="product">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Product</span>
+            <span class="arrow-close">
+                <i *ngIf="lang == 'en'" class='bx bx-right-arrow-alt'></i>
+                <i *ngIf="lang == 'ar'" class='bx bx-left-arrow-alt'></i>
+            </span>
+            <span class="arrow-open">
+                <i class='bx bx-down-arrow-alt'></i>
+            </span>
+        </a>
+        <ul class="item">
+            <li routerLinkActive="active2">
+                <a routerLink="about">
+                    <span class="links_name">About</span>
+                </a>
+            </li>
+
+        </ul>
+    </li>
+
+    <li routerLinkActive="active">
+        <a routerLink="profile">
+            <i class='bx bx-chat'></i>
+            <span class="links_name">Profile</span>
+            <span class="arrow-close">
+                <i *ngIf="lang == 'en'" class='bx bx-right-arrow-alt'></i>
+                <i *ngIf="lang == 'ar'" class='bx bx-left-arrow-alt'></i>
+            </span>
+            <span class="arrow-open">
+                <i class='bx bx-down-arrow-alt'></i>
+            </span>
+
+        </a>
+        <ul class="item">
+            <li routerLinkActive="active2">
+                <a routerLink="contact">
+                    <span class="links_name">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a routerLink="/">
+            <i class='bx bx-pie-chart-alt-2'></i>
+            <span class="links_name">Analytics</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/">
+            <i class='bx bx-folder'></i>
+            <span class="links_name">File Manager</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/">
+            <i class='bx bx-cart-alt'></i>
+            <span class="links_name">Order</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/">
+            <i class='bx bx-heart'></i>
+            <span class="links_name">Saved</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/">
+            <i class='bx bx-cog'></i>
+            <span class="links_name">Setting</span>
+        </a>
+    </li>
+
+</ul>
