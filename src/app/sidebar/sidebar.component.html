@@ -6,13 +6,13 @@
 </div>
 <ul class="nav-list">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-        <a routerLink="/" class="link">
+        <a routerLink="/" class="link" (click)="closeMenu()">
             <i class='bx bx-user'></i>
             <span class="links_name">Home</span>
         </a>
     </li>
-    <li class="" routerLinkActive="active">
-        <a routerLink="product" class="link">
+    <li class="" routerLinkActive="active" [class.show]="labelItem == 'product' && show =='active'">
+        <a class="link pointer" (click)="openMenu('product')">
             <i class='bx bx-grid-alt'></i>
             <span class="links_name">Product</span>
             <span class="arrow-close">
@@ -25,8 +25,8 @@
         </a>
         <ul class="item">
             <li routerLinkActive="active2">
-                <a routerLink="about">
-                    <span class="links_name">About</span>
+                <a routerLink="product">
+                    <span class="links_name">product</span>
                 </a>
             </li>
             <li routerLinkActive="active2">
@@ -36,58 +36,6 @@
             </li>
 
         </ul>
-    </li>
-
-    <li routerLinkActive="active">
-        <a routerLink="profile" class="link">
-            <i class='bx bx-chat'></i>
-            <span class="links_name">Profile</span>
-            <span class="arrow-close">
-                <i *ngIf="lang == 'en'" class='bx bx-right-arrow-alt'></i>
-                <i *ngIf="lang == 'ar'" class='bx bx-left-arrow-alt'></i>
-            </span>
-            <span class="arrow-open">
-                <i class='bx bx-down-arrow-alt'></i>
-            </span>
-
-        </a>
-        <ul class="item">
-            <li routerLinkActive="active2">
-                <a routerLink="contact">
-                    <span class="links_name">Contact</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a routerLink="/" class="link">
-            <i class='bx bx-pie-chart-alt-2'></i>
-            <span class="links_name">Analytics</span>
-        </a>
-    </li>
-    <li>
-        <a routerLink="/" class="link">
-            <i class='bx bx-folder'></i>
-            <span class="links_name">File Manager</span>
-        </a>
-    </li>
-    <li>
-        <a routerLink="/" class="link">
-            <i class='bx bx-cart-alt'></i>
-            <span class="links_name">Order</span>
-        </a>
-    </li>
-    <li>
-        <a routerLink="/" class="link">
-            <i class='bx bx-heart'></i>
-            <span class="links_name">Saved</span>
-        </a>
-    </li>
-    <li>
-        <a routerLink="/" class="link">
-            <i class='bx bx-cog'></i>
-            <span class="links_name">Setting</span>
-        </a>
     </li>
 
 </ul>

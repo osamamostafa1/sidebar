@@ -35,7 +35,7 @@
         transition: all 0.5s ease;
     }
     .sidebar .logo-details .logo_name {
-        color: #fff;
+        color: $primary-bg;
         font-size: 20px;
         font-weight: 600;
         opacity: 0;
@@ -61,7 +61,7 @@
         text-align: #{$end};
     }
     .sidebar i {
-        color: #fff;
+        color: $primary-bg;
         height: 45px;
         min-width: 45px;
         font-size: 28px;
@@ -82,7 +82,7 @@
         border: 0px solid $green;
         height: 45px;
         overflow: hidden;
-        transition: all 0.4s ease;
+        transition: width 0.4s ease;
     }
     .sidebar li a {
         display: flex;
@@ -94,10 +94,10 @@
         transition: all 0.2s;
     }
     .sidebar li a:hover {
-        background: $dark-green;
+        background: $hover-green;
     }
     .sidebar li a .links_name {
-        color: #fff;
+        color: $primary-bg;
         font-size: 15px;
         font-weight: 400;
         white-space: nowrap;
@@ -112,7 +112,7 @@
     .sidebar li a:hover .links_name,
     .sidebar li a:hover i {
         transition: all 0.5s ease;
-        color: #fff;
+        color: $primary-bg;
     }
     .sidebar li i {
         height: 45px;
@@ -122,7 +122,7 @@
     }
     .main-section {
         position: relative;
-        background: #E4E9F7;
+        background: $background;
         min-height: 100vh;
         padding: 5px;
         padding-top: 60px;
@@ -147,26 +147,31 @@
         padding: 5px 15px;
     }
     .item li {
-        margin: 0px 8px;
+        margin: 4px 8px;
     }
     .sidebar.close li {
-        max-height: 45px;
+        height: 45px;
+        padding-bottom: 0px;
     }
     .sidebar .active {
-        background: $dark-green;
+        background: $active-green;
+    }
+    .sidebar .show {
         height: auto;
         border: 0px;
+        background: $dark-green;
+        padding-bottom: 7px;
     }
     .link {
         border: 0px;
     }
     .sidebar.open .active .link {
-        border-#{$start}: 5px solid #FEB019;
+        border-#{$start}: 5px solid $warning;
         border-radius: 0;
     }
     .sidebar .active2 {
-        background-color: #154a0f;
-        border-radius: 0px;
+        background-color: $active-green;
+        border-radius: 5px;
     }
     .sidebar span {
         margin-#{$end}: auto;
@@ -178,10 +183,10 @@
         margin: 0px !important;
         display: none;
     }
-    .active .arrow-close {
+    .show .arrow-close {
         display: none;
     }
-    .active .arrow-open {
+    .show .arrow-open {
         display: block;
     }
     @media (max-width: 420px) {

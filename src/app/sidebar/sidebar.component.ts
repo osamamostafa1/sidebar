@@ -8,6 +8,8 @@ import { SidebarService } from '../services/sidebar.service';
 })
 export class SidebarComponent implements OnInit {
   lang: any = 'ar'
+  labelItem:string = ''
+  show:string ='inActive'
   constructor(public sideBarService: SidebarService,) {
     this.lang = localStorage.getItem('lang')
   }
@@ -19,4 +21,18 @@ export class SidebarComponent implements OnInit {
     this.sideBarService.changeSideBar()
   }
 
+  openMenu(label:string){
+    if(this.show == 'active'){
+      this.show = 'inActive'
+    }else{
+      this.show = 'active'
+    }
+    this.labelItem = label
+  }
+
+  closeMenu(){
+    this.show = 'inActive'
+  }
+
 }
+
