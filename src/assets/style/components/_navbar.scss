@@ -5,3 +5,24 @@
 .menue-open {
     margin-top: 10px;
 }
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: white;
+    height: 60px;
+    z-index: 15;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@mixin biDirectional($start, $end) {
+.dropdown-menu {
+    text-align: #{$start};
+    #{$end}: 0;
+}
+
+}
+
+@import '../decide';

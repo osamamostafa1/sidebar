@@ -16,6 +16,7 @@
         background: $green;
         padding: 6px 14px;
         padding-#{$start}: 17px;
+        margin-top: 60px;
         z-index: 99;
         transition: all 0.5s ease;
     }
@@ -123,7 +124,8 @@
         position: relative;
         background: #E4E9F7;
         min-height: 100vh;
-        top: 0;
+        padding: 5px;
+        padding-top: 60px;
         #{$start}: 78px;
         width: calc(100% - 78px);
         transition: all 0.5s ease;

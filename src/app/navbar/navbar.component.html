@@ -1,0 +1,53 @@
+<header class=" navbar border-b flex items-center justify-between shadow-lg">
+    <!-- Logo text or image -->
+    <div class="flex items-center justify-between mb-4 ">
+        <img class="mr-5" width="80" src="../assets/image/original_logo.png" />
+
+        <!-- <a class="text-black hover:text-orange md:hidden" (click)="isOpenMenu()">
+        <i class="fa fa-2x fa-bars"></i>
+      </a> -->
+    </div>
+    <!-- END Logo text or image -->
+
+    <!-- Global navigation -->
+    <nav>
+        <ul class="list-reset flex flex-row items-center p-0">
+
+            <li class="ml-4">
+                <div class="py-3  md:text-xl  ">
+                    <i class="bx bx-plus-circle"></i>
+                </div>
+
+            </li>
+            <li class="ml-4">
+                <div class="py-3  md:text-xl   ">
+                    <i class="bx bx-hide"></i>
+                </div>
+            </li>
+
+            <li class="ml-4">
+                <div ngbDropdown>
+                    <i class="bx bx-cog" id="dropdownBasic1" ngbDropdownToggle></i>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="menue-open">
+                        <button ngbDropdownItem (click)="changeLanguage()" class="sm:text-sm">Change</button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="ml-4">
+                <div class="py-3  md:text-xl   ">
+                    <i class="bx bx-bell"></i>
+                </div>
+
+            </li>
+            <li class="ml-4">
+                <div class="relative w-10 h-10">
+                    <img class="rounded-full border border-gray-100 shadow-sm"
+                        src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- END Global navigation -->
+
+</header>

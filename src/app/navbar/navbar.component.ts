@@ -7,13 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+
+  ) {
+
+  }
+
 
   ngOnInit() {
   }
 
+
   changeLanguage() {
+    if (localStorage.getItem('lang') == 'ar') {
+      localStorage.setItem('lang', 'en')
+    }
+    else if (localStorage.getItem('lang') == 'en') {
+      localStorage.setItem('lang', 'ar')
+    }
+
+    document.querySelector('body')!.setAttribute('dir', localStorage.getItem('lang') == 'ar' ? 'rtl' : 'ltr');
 
   }
+
+
+
+
 
 }
