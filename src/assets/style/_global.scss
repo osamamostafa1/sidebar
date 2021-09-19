@@ -3,6 +3,10 @@
 @import "buttons";
 @import "./components/navbar";
 @import "./components/sidebar";
+body {
+    background: $background;
+}
+
 .pointer {
     cursor: pointer;
 }

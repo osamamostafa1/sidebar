@@ -70,7 +70,7 @@
     }
     .sidebar .nav-list {
         margin-top: 20px;
-        height: calc(100% - 80px);
+        height: calc(100% - 140px);
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -122,10 +122,9 @@
     }
     .main-section {
         position: relative;
-        background: $background;
         min-height: 100vh;
-        padding: 5px;
-        padding-top: 60px;
+        padding: 1rem;
+        padding-top: calc(60px + 1rem);
         #{$start}: 78px;
         width: calc(100% - 78px);
         transition: all 0.5s ease;
