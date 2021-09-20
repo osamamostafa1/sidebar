@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'sidebar';
   constructor(public sideBarService: SidebarService,) {
 
-    localStorage.setItem('lang', 'en')
+    localStorage.setItem('lang', 'ar')
     document.querySelector('body')!.setAttribute('dir', localStorage.getItem('lang') == 'ar' ? 'rtl' : 'ltr');
     document.querySelector('html')!.setAttribute('lang', localStorage.getItem('lang') == 'ar' ? 'ar' : 'en');
 
