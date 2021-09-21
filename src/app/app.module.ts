@@ -11,6 +11,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+
 
 @NgModule({
   declarations: [					
@@ -27,6 +29,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    NgApexchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
