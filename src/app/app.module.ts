@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [					
@@ -27,6 +28,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -27,6 +27,7 @@ export class NavbarComponent implements OnInit {
     }
 
     document.querySelector('body')!.setAttribute('dir', localStorage.getItem('lang') == 'ar' ? 'rtl' : 'ltr');
+    document.querySelector('html')!.setAttribute('lang', localStorage.getItem('lang') == 'ar' ? 'ar' : 'en');
 
   }
 

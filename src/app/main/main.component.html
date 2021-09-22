@@ -54,31 +54,84 @@
 </div>
 <div class="wrapper grid grid-cols-2 md:grid-cols-6 grid-rows-2 gap-3 mt-3">
     <div class="card col-span-2  row-span-2">
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
+        <p>الطلبات الخاصة</p>
+        <canvas baseChart 
+        [chartType]="chartTypeDoughnut"
+        [data]="chartDatasetsDoughnut" 
+        [labels]="chartLabelsDoughnut"
+        [colors]="chartColorsDoughnut"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartHover)="chartHovered($event)" 
+        (chartClick)="chartClicked($event)">
+    </canvas>
     </div>
     <div class="card col-span-2  row-span-2">
-        card
+        <p>الطلبات الخاصة</p>
+        <canvas baseChart
+        [chartType]="chartTypeBar"
+        [datasets]="chartDatasetsBar"
+        [labels]="chartLabelsBar"
+        [colors]="chartColorsBar"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+    </canvas>
     </div>
     <div class="card col-span-2  row-span-2">
-        card
+        <p>الطلبات الخاصة</p>
+        <canvas baseChart
+        [chartType]="chartTypeHorizontal"
+        [datasets]="chartDatasetsHorizontal"
+        [labels]="chartLabelsHorizontal"
+        [colors]="chartColorsHorizontal"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+    </canvas>
     </div>
     <div class="card col-span-2 md:col-span-4  row-span-2">
-        card
+        <p>الطلبات الخاصة</p>
+        <div class="flex justify-between">
+            <div class="w-2/5 pt-3">
+                <div class="flex items-center h-4 mb-1"><i class='bx bxs-circle' style="color: brown;"></i><span class="m-2 mt-0">جدة</span></div>
+                <div class="flex items-center h-4 mb-1"><i class='bx bxs-circle' style="color: rgb(54, 42, 165);"></i><span class="m-2 mt-0">مكة</span></div>
+                <div class="flex items-center h-4 mb-1"><i class='bx bxs-circle' style="color: rgb(153, 165, 42);"></i><span class="m-2 mt-0">جدة</span></div>
+                <div class="flex items-center h-4 mb-1"><i class='bx bxs-circle' style="color: rgb(42, 126, 165);"></i><span class="m-2 mt-0">جدة</span></div>
+                <div class="flex items-center h-4 mb-1"><i class='bx bxs-circle' style="color: rgb(165, 42, 144);"></i><span class="m-2 mt-0">جدة</span></div>
+                <div class="flex items-center h-4 mb-1"><i class='bx bxs-circle' style="color: rgb(75, 129, 13);"></i><span class="m-2 mt-0">جدة</span></div>
+            </div>
+            <div class="Horizontal2">
+                <canvas baseChart
+                [chartType]="chartTypeHorizontal2"
+                [datasets]="chartDatasetsHorizontal2"
+                [labels]="chartLabelsHorizontal2"
+                [colors]="chartColorsHorizontal2"
+                [options]="chartOptions"
+                [legend]="true"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+            </canvas>
+            </div>
+            
+        </div>
+        
     </div>
-    <div class="card col-span-2  row-span-2">
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
-        <p>o</p>
+    <div class="card col-span-2 justify-center row-span-2">
+        <p>الطلبات الخاصة</p>
+        <canvas baseChart
+    id="lineChart4"
+        [chartType]="chartTypeLine"
+        [datasets]="chartDatasetsLine"
+        [labels]="chartLabelsLine"
+        [colors]="chartColorsLine"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+    </canvas>
     </div>
 
 </div>

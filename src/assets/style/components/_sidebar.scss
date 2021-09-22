@@ -189,10 +189,7 @@
     .show .arrow-open {
         display: block;
     }
-    @media (max-width: 420px) {
-        .sidebar li .tooltip {
-            display: none;
-        }
+    @media (max-width: 1000px) {
         .sidebar.open~.main-section {
             #{$start}: 78px;
             width: calc(100% - 78px);
