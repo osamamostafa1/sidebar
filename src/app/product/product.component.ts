@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-
+  isFilter:boolean = false
   constructor() { }
 
   ngOnInit() {
+  }
+
+  openFilter(){
+this.isFilter =!this.isFilter
   }
 
 }

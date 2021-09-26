@@ -4,6 +4,7 @@
 @import "./components/navbar";
 @import "./components/sidebar";
 @import "./components/home";
+@import "./components/table";
 @font-face {
     font-family: DIN;
     src: url('../fonts/alfont_com_AlFont_com_DINNextLTArabic-Medium-3.ttf');
@@ -42,6 +43,15 @@ h3 {
 
 .p-4 {
     padding: 1.3rem !important;
+}
+.pl-4 {
+    padding-left: 1.3rem;
+}
+.pr-4 {
+    padding-right: 1.3rem;
+}
+.pt-4{
+    padding-top: 1.3rem;
 }
 
 .pointer {

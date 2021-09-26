@@ -1,76 +1,64 @@
-@import 'mixins';
-.m-btn {
-    font-size: $fontSize;
-    color: $primary-bg;
-    line-height: $line-height;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px;
+
+@import "colors";
+
+.btn {
+    background-color: #dddddd8c;
+}
+
+.form-control {
+    display: block;
     width: 100%;
-}
-
-.btn:disabled {
-    @include boxshadow(0 0 6px rgba(122, 137, 147, 0));
-    outline: 0 !important;
-    cursor: not-allowed !important;
-    opacity: 0.5 !important;
-    background-color: $green !important;
-    border: 1px solid $green;
-}
-
-.m-btn:hover {
-    @include boxshadow(0 8px 18px 0 rgba(122, 137, 147, 0.3));
-}
-
-.m-btn:focus {
-    @include boxshadow(0 0 6px rgba(122, 137, 147, 0.3));
-    outline: 0;
-    background-color: $green;
-}
-
-.m-btn:disabled {
-    @include boxshadow(0 0 6px rgba(122, 137, 147, 0));
-    outline: 0;
-    cursor: not-allowed;
-    opacity: 0.5;
-}
-
-.btn-dark:disabled {
-    @include boxshadow(0 0 6px rgba(122, 137, 147, 0));
-    outline: 0;
-    cursor: not-allowed;
-    opacity: 0.5;
-    background-color: black !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color;
+    background-color: $primary-bg !important;
+    background-clip: padding-box;
+    border: 1px solid #ced4da !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border-radius: .25rem !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .btn-primary {
+    color: #fff;
     background-color: $green;
-    &:hover {
-        background-color: $green;
-    }
+    border-color: $green;
 }
 
-.btn-danger {
-    background-color: $danger;
-    &:hover {
-        background-color: $danger;
-    }
+.btn-primary:hover ,.btn-primary:active , .btn-primary:focus {
+    color: #fff;
+    background-color: #2a7822;
+    border-color: #2a7822;
 }
 
-.btn-large {
-    @extend .m-btn;
+.btn-primary:focus ,.form-control:focus .btn-default:focus ,.btn-default:active {
+    box-shadow: 0 0 0 0.25rem rgba(43, 120, 34, 0.5) !important;
+}
+.form-select:focus ,.form-check-input:focus{
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(43, 120, 34, 0.5);
+  }
+
+  .form-check-input:checked {
+    background-color: $green;
+    border-color: $green;
 }
 
-.btn-medium {
-    @extend .m-btn;
+.form-check-input:hover ,.form-check-input:active , .form-check-input:focus{
+    color:#2a7822
 }
 
-.btn-small {
-    @extend .m-btn;
+
+.form-switch .form-check-input:checked {
+    background-size: auto !important;
 }
 
-.btn-circle {
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: bold;
+.form-check .form-check-input {
+    float: none;
+    margin-left: 0em !important;
 }
