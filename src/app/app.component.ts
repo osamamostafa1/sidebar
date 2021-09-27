@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ChangeLanguageService } from './services/change-language.service';
 import { SidebarService } from './services/sidebar.service';
 
 @Component({
@@ -8,14 +9,20 @@ import { SidebarService } from './services/sidebar.service';
 })
 export class AppComponent {
   title = 'sidebar';
-  constructor(public sideBarService: SidebarService,) {
+  constructor(
+    public sideBarService: SidebarService,
+    public languageService: ChangeLanguageService
+  ) {
     if (localStorage.getItem('lang') == 'ar') {
       localStorage.setItem('lang', 'ar')
+      this.languageService.langauge.next('ar')
     }
     else if (localStorage.getItem('lang') == 'en') {
       localStorage.setItem('lang', 'en')
-    }else{
+      this.languageService.langauge.next('en')
+    } else {
       localStorage.setItem('lang', 'ar')
+      this.languageService.langauge.next('ar')
     }
 
     document.querySelector('body')!.setAttribute('dir', localStorage.getItem('lang') == 'ar' ? 'rtl' : 'ltr');

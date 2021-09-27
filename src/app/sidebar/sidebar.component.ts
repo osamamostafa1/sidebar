@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../services/change-language.service';
 import { SidebarService } from '../services/sidebar.service';
 
 @Component({
@@ -7,12 +8,12 @@ import { SidebarService } from '../services/sidebar.service';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  lang: any = 'ar'
-  labelItem:string = ''
-  show:string ='inActive'
-  constructor(public sideBarService: SidebarService,) {
-    this.lang = localStorage.getItem('lang')
-  }
+  labelItem: string = ''
+  show: string = 'inActive'
+  constructor(
+    public sideBarService: SidebarService,
+    public languageService: ChangeLanguageService
+  ) { }
 
   ngOnInit() {
   }
@@ -21,16 +22,16 @@ export class SidebarComponent implements OnInit {
     this.sideBarService.changeSideBar()
   }
 
-  openMenu(label:string){
-    if(this.show == 'active'){
+  openMenu(label: string) {
+    if (this.show == 'active') {
       this.show = 'inActive'
-    }else{
+    } else {
       this.show = 'active'
     }
     this.labelItem = label
   }
 
-  closeMenu(){
+  closeMenu() {
     this.show = 'inActive'
   }
 

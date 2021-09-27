@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../services/change-language.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   constructor(
-
+    public languageService: ChangeLanguageService
   ) {
 
   }
@@ -21,9 +22,11 @@ export class NavbarComponent implements OnInit {
   changeLanguage() {
     if (localStorage.getItem('lang') == 'ar') {
       localStorage.setItem('lang', 'en')
+      this.languageService.langauge.next('en')
     }
     else if (localStorage.getItem('lang') == 'en') {
       localStorage.setItem('lang', 'ar')
+      this.languageService.langauge.next('ar')
     }
 
     document.querySelector('body')!.setAttribute('dir', localStorage.getItem('lang') == 'ar' ? 'rtl' : 'ltr');

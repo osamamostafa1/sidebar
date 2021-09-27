@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../services/change-language.service';
 
 @Component({
   selector: 'app-about-us',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit {
-  lang: any = 'ar'
-  constructor() {
-    this.lang = localStorage.getItem('lang')
+
+  constructor(
+    public languageService: ChangeLanguageService
+  ) {
+
   }
 
   ngOnInit() {

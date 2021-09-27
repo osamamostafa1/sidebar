@@ -1,8 +1,10 @@
 <div class="logo-details">
     <img src="../../assets/image/person.jpg" alt="">
     <div class="logo_name">Farmer</div>
-    <i class='bx bx-menu' id="btn" *ngIf="sideBarService.sideBarSubject.value == 'close'" (click)="onToggleSideBar()"></i>
-    <i class='bx bx-menu-alt-right' id="btn" *ngIf="sideBarService.sideBarSubject.value == 'open'" (click)="onToggleSideBar()"></i>
+    <i class='bx bx-menu' id="btn" *ngIf="sideBarService.sideBarSubject.value == 'close'"
+        (click)="onToggleSideBar()"></i>
+    <i class='bx bx-menu-alt-right' id="btn" *ngIf="sideBarService.sideBarSubject.value == 'open'"
+        (click)="onToggleSideBar()"></i>
 </div>
 <ul class="nav-list">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
@@ -16,8 +18,8 @@
             <i class='bx bx-grid-alt'></i>
             <span class="links_name">Product</span>
             <span class="arrow-close">
-                <i *ngIf="lang == 'en'" class='bx bx-right-arrow-alt'></i>
-                <i *ngIf="lang == 'ar'" class='bx bx-left-arrow-alt'></i>
+                <i *ngIf="languageService.langauge.value == 'en'" class='bx bx-right-arrow-alt'></i>
+                <i *ngIf="languageService.langauge.value == 'ar'" class='bx bx-left-arrow-alt'></i>
             </span>
             <span class="arrow-open">
                 <i class='bx bx-down-arrow-alt'></i>

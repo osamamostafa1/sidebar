@@ -2,6 +2,9 @@
 .dropdown-toggle::after {
     display: none;
 }
+.dropup .dropdown-toggle::after{
+    display: none;
+}
 
 .menue-open {
     margin-top: 10px;
