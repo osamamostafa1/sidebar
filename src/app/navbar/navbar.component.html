@@ -1,53 +1,49 @@
 <header class=" navbar border-b flex items-center justify-between ">
     <!-- Logo text or image -->
-    <div class="flex items-center justify-between mb-4 ">
+    <div class="h-full flex items-center justify-between">
         <img class="mr-5" width="80" src="../assets/image/original_logo.png" />
-
-        <!-- <a class="text-black hover:text-orange md:hidden" (click)="isOpenMenu()">
-        <i class="fa fa-2x fa-bars"></i>
-      </a> -->
     </div>
     <!-- END Logo text or image -->
 
     <!-- Global navigation -->
-    <nav>
-        <ul class="list-reset flex flex-row items-center p-0">
 
-            <li class="ml-4">
-                <div class="py-3  md:text-xl  pointer">
-                    <i class="bx bx-plus-circle"></i>
-                </div>
+    <ul class="list-reset flex flex-row items-center p-0">
 
-            </li>
-            <li class="ml-4">
-                <div class="py-3  md:text-xl   pointer">
-                    <i class='bx bx-show'></i>
-                </div>
-            </li>
+        <li class="ml-4">
+            <div class="py-3  md:text-xl  pointer">
+                <i class="bx bx-plus-circle"></i>
+            </div>
 
-            <li class="ml-4">
-                <div ngbDropdown>
-                    <i class="bx bx-cog pointer" id="dropdownBasic1" ngbDropdownToggle></i>
-                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="menue-open">
-                        <button ngbDropdownItem (click)="changeLanguage()" class="sm:text-sm">Change</button>
-                    </div>
-                </div>
-            </li>
+        </li>
+        <li class="ml-4">
+            <div class="py-3  md:text-xl   pointer">
+                <i class='bx bx-show'></i>
+            </div>
+        </li>
 
-            <li class="ml-4 bell">
-                <div class="py-3  md:text-xl  pointer ">
-                    <i class="bx bx-bell"></i>
+        <li class="ml-4">
+            <div ngbDropdown>
+                <i class="bx bx-cog pointer" id="dropdownBasic1" ngbDropdownToggle></i>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="menue-open">
+                    <button ngbDropdownItem (click)="changeLanguage()" class="sm:text-sm">Change</button>
                 </div>
+            </div>
+        </li>
 
-            </li>
-            <li class="ml-4">
-                <div class="relative w-10 h-10 pointer">
-                    <img class="rounded-full border border-gray-100 shadow-sm"
-                        src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
-                </div>
-            </li>
-        </ul>
-    </nav>
+        <li class="ml-4 bell">
+            <div class="py-3  md:text-xl  pointer ">
+                <i class="bx bx-bell"></i>
+            </div>
+
+        </li>
+        <li class="ml-4">
+            <div class="relative w-10 h-10 pointer">
+                <img class="rounded-full border border-gray-100 shadow-sm"
+                    src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
+            </div>
+        </li>
+    </ul>
+
     <!-- END Global navigation -->
 
 </header>
