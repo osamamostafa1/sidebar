@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit {
-
-  constructor() { }
+  lang: any = 'ar'
+  constructor() {
+    this.lang = localStorage.getItem('lang')
+  }
 
   ngOnInit() {
+
   }
 
 }

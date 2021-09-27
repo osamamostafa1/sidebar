@@ -5,6 +5,7 @@
 @import "./components/sidebar";
 @import "./components/home";
 @import "./components/table";
+@import "./components/details";
 @font-face {
     font-family: DIN;
     src: url('../fonts/alfont_com_AlFont_com_DINNextLTArabic-Medium-3.ttf');
@@ -64,3 +65,5 @@ h3 {
     border: 0px;
     box-shadow: $shadow !important;
 }
+
+

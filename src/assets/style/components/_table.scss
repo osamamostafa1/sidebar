@@ -114,3 +114,12 @@ background: $primary-bg;
 .table>:not(caption)>*>* {
     border-bottom-width: 0px;
 }
+
+@media (max-width:1000px) {
+    .table {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}
