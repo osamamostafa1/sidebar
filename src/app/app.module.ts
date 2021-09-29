@@ -12,23 +12,33 @@ import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ChartsModule } from 'ng2-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [					
+  declarations: [
     AppComponent,
     MainComponent,
     SidebarComponent,
-      AboutUsComponent,
-      ProfileComponent,
-      ProductComponent,
-      ContactComponent,
-      NavbarComponent
-   ],
+    AboutUsComponent,
+    ProfileComponent,
+    ProductComponent,
+    ContactComponent,
+    NavbarComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ChartsModule
+    ChartsModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgSelectModule,
+    //materials
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

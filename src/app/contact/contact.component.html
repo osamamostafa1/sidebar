@@ -1,3 +1,94 @@
-<p>
-  contact works!
-</p>
+<div class="modal-wrapper">
+  <div class="modal-header ">
+    <p class="w-full text-center">{{actionName}} User</p>
+
+  </div>
+  <div class="modal-content">
+    <div class="modal-body row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput01" placeholder="Group Name" autocomplete="off">
+            <label for="floatingInput01">Brand Name</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput01" placeholder="Group Name" autocomplete="off">
+            <label for="floatingInput01">Brand Name</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group file">
+          <label>photo</label>
+          <div class="input-group mb-3">
+            <input type="file" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput01" placeholder="Group Name" autocomplete="off">
+            <label for="floatingInput01">Brand Name</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check flex items-center h-full">
+          <input class="form-check-input mr-2 ml-2" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label ml-2 mr-2" for="flexCheckDefault">
+            منتجات بدون سعر شراء
+          </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3 -mt-2">
+          <label>Cars</label>
+          <ng-select class="select" [items]="cars" bindLabel="name" bindValue="id" [multiple]="false">
+          </ng-select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput01" placeholder="Group Name" autocomplete="off">
+            <label for="floatingInput01">Brand Name</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check flex items-center h-full form-switch">
+          <label class="form-check-label ml-2 mr-2">تفعيل</label>
+          <input class="form-check-input" type="checkbox">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput01" placeholder="Group Name" autocomplete="off">
+            <label for="floatingInput01">Brand Name</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary mb-2" type="submit" (click)="onSubmit()">{{actionName}}</button>
+    <button class="btn btn-default mb-2" type="submit" (click)="closeModal()">close</button>
+  </div>
+
+</div>

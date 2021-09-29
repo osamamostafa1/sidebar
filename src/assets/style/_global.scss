@@ -1,6 +1,6 @@
 @import "colors";
 @import "scroll_bar";
-@import "buttons";
+@import "form";
 @import "./components/navbar";
 @import "./components/sidebar";
 @import "./components/home";
@@ -66,4 +66,8 @@ h3 {
     box-shadow: $shadow !important;
 }
 
+
+.modal-footer {
+    justify-content: inherit;
+}
 
