@@ -2,7 +2,7 @@
 @import "colors";
 
 .btn {
-    background-color: #dddddd8c;
+    background-color: $space-gray;
 }
 
 .form-control {
@@ -15,7 +15,7 @@
     color: $color;
     background-color: $primary-bg !important;
     background-clip: padding-box;
-    border: 1px solid #ced4da !important;
+    border: 1px solid $content-form !important;
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
     appearance: none !important;
@@ -38,16 +38,16 @@
     box-shadow: 0 10px 20px -10px #4cb040;
 }
 .btn-default {
-    box-shadow: 0 10px 20px -10px #a1a1a1;
+    box-shadow: 0 10px 20px -10px $space-gray2;
 }
 .image{
-    box-shadow: 0 10px 20px -10px #565656;
+    box-shadow: 0 10px 20px -10px $pop-color;
 }
 
 .btn-primary:hover ,.btn-primary:active , .btn-primary:focus {
     color: #fff;
-    background-color: #2a7822;
-    border-color: #2a7822;
+    background-color: $space-green;
+    border-color: $space-green;
 }
 
 .btn-primary:focus ,.form-control:focus .btn-default:focus ,.btn-default:active {
@@ -65,7 +65,7 @@
 }
 
 .form-check-input:hover ,.form-check-input:active , .form-check-input:focus{
-    color:#2a7822
+    color:$space-green
 }
 
 
@@ -80,7 +80,7 @@
 
 
 .modal-header {
-    border-bottom: 0px solid #dee2e6;
+    border-bottom: 0px solid $header-form;
 }
 
 .form-group label{
@@ -104,7 +104,7 @@
     color: $color;
     background-color: #fff;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid $lite-ccc;
     min-height: 42px;
 }
 
@@ -132,7 +132,7 @@
 
 .modal-content .form-check{
     box-shadow: $shadow;
-    border: 1px solid #ced4da !important;
+    border: 1px solid $content-form !important;
     border-radius: .25rem;
     height: calc(100% - 15px);
 }

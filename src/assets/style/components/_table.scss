@@ -1,3 +1,4 @@
+@import "colors";
 .table-container{
 background: $primary-bg;
 }
@@ -51,14 +52,14 @@ background: $primary-bg;
     color: $primary-bg;
     text-decoration: none;
     background-color: $green;
-    border: 0px solid #dee2e6;
+    border: 0px solid $header-form;
     border-radius: 50%;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .page-link {
     color: $color;
-    border: 0px solid #dee2e6;
+    border: 0px solid $header-form;
     border-radius: 50%;
 }
 
